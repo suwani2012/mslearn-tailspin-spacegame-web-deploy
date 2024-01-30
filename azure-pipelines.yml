@@ -7,6 +7,8 @@ variables:
 
 stages:
 - stage: 'Build'
+  variables:
+    - group: 'variable_group_dev'
   displayName: 'Build the web application'
   jobs: 
   - job: 'Build'
